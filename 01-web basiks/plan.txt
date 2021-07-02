@@ -1,0 +1,42 @@
+1. Как устроен интернет
+2. Протоколы передачи данных
+3. Приложения клиент / сервер
+4. REST
+5. Git
+
+
+Редактор
+https://code.visualstudio.com/
+
+Atom One Dark
+Material Icon Theme
+
+
+Plugins
+https://marketplace.visualstudio.com/vscode
+
+
+Настройка редактора кода
+https://gist.github.com/gitspawn/b4444535274daa928dede7003dace1ea
+
+
+Установка Git
+https://phoenixnap.com/kb/how-to-install-git-windows
+https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git
+https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git
+
+
+Команды Git
+https://gist.github.com/gitspawn/2ab33c93bd95c61af1d0a14ba9b14470
+
+
+Большая обучалка по Git
+https://githowto.com/ru
+
+
+Шпаргалка по Git
+https://agladky.ru/blog/git-cheat-sheet/
+
+
+HTTP SATUS CODES
+https://httpstatuses.com/

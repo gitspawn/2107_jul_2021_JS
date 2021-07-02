@@ -1,0 +1,44 @@
+Status Codes
+
+100 - information
+200 - succes
+300 - redirect
+400 - bad reques - client error
+500 - server error 
+
+
+
+404
+403
+400
+
+https://habr.com/ru/post/273795/
+
+https://habr.com/ru/post/cоздание-веб-сайта-Курс-молодого-бойца/
+
+
+
+
+// HTTP - methods
+
+C -create
+R -read
+U - update
+D - delete
+
+
+
+99.99999999999%
+
+GET - read
+POST - create
+PUT (PATCH) - update
+DELETE - delete
+
+
+
+REST
+REST - API
+
+https://jsonplaceholder.typicode.com/users/5
+https://jsonplaceholder.typicode.com/posts/2

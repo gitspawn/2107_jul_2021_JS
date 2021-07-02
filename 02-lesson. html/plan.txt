@@ -1,0 +1,31 @@
+https://developer.mozilla.org/ru/docs/Web/HTML
+HTML
+  - теги (открывающиеся, закрывающиеся)
+  - заголовки
+  - параграфы
+  - ссылки
+  - атрибуты тегов
+  - списки
+    - ненумерованные
+    - нумерованные
+  - таблицы
+  - формы
+  - кнопки
+  - изображения
+  - цитаты
+  - HTML 5 semantic
+    (
+      https://www.freecodecamp.org/news/semantic-html5-elements
+      https://www.w3schools.com/html/html5_semantic_elements.asp
+    )
+  - метатеги
+  - html entities (
+    https://www.w3schools.com/html/html_entities.asp
+  )
+
+
+Валидаторы HTML/CSS
+
+
+Figma
+https://www.figma.com/file/ybRJkdDdZo1KdSBC1YeWQr/Builder_Lviv?node-id=89%3A5

@@ -1,0 +1,52 @@
+https://www.google.ru/?hl=uk
+https://www.youtube.com/watch?v=LRV0bAKdZ6k&ab_channel=BARABANOVA
+https://classic.yarnpkg.com/en/docs/migrating-from-npm#toc-cli-commands-comparison
+https://monolith.in.ua/pdd/onlayn-pdd-ukrainyi-na-russkom-yazyike/
+
+
+
+https://www.youtube.com/watch?v=LRV0bAKdZ6k&ab_channel=BARABANOVA - URI
+https://www.youtube.com/watch?v=Tut3eF3bheE&ab_channel=MARCOCONFETTI
+URL + URN = URI
+
+
+https - protocol
+https://www.youtube.com:5000 - URL
+:5000 - PORT
+www.youtube.com - DNS
+www.192.236.05.175
+256.256.256.256
+
+watch?v=LRV0bAKdZ6k&ab_channel=BARABANOVA - URN
+? - starts query sring
+& - query dilimiter
+v=LRV0bAKdZ6k&ab_channe
+hl=uk
+https://www.youtube.com/watch
+?
+user=vova
+&
+article=sport
+&
+data=2021
+
+
+/watch/movie - pathName
+
+# anchor
+
+
+
+
+https://classic.com/posts/march?
+user=vova
+&
+title=popular
+&
+coments=true
+#heading
+
+
+
+80
+443
