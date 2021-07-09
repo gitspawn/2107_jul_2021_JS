@@ -1,0 +1,294 @@
+/* 
+    Comments
+*/
+
+/* css selector {
+    css_property : value
+    css_property : value
+} */
+
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    /* display: none; */
+    background-color: lightgray;
+}
+
+p {
+    /* display: none; */
+    color: black;
+}
+
+h1 {
+    /* display: none; */
+    /* color: maroon !important; */
+    color: tomato;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+    font-family: Qahiri;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: indigo;
+}
+
+a:active {
+    color: black;
+}
+
+/* a:visited {
+    color: green;
+} */
+
+#main-heading {
+    color: green;
+}
+
+h1.box-1 {
+    color: black;
+}
+
+h1.box-1 + .text-content {
+    /* display: none; */
+    color: blue;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* 1 + 10 */
+h1.box-2 {
+    color: violet;
+}
+
+/* 10 + 10 */
+.box-2.second-heding {
+    color: mediumslateblue;
+}
+
+/* h1.box-2 + p.text-content {} */
+h1.box-2 + .text-content {
+    /* color: green; */
+    /* color: #fc6e51; */
+    /* color: #000000; */
+    /* color: #ffffff; */
+    /* font-weight: bold; */
+    color: rgb(34, 153, 34);
+    background-color: black;
+
+    font-size: 22px;
+    /* font-size: 120%; */
+    /* font-size: 1.2em; */
+    font-weight: 600;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-family: Qahiri, Tahoma;
+    line-height: 1.5;
+}
+
+/* 1 + 10
+10 */
+
+.categories {
+    border: none;
+    border: 2px solid green;
+    /* margin: 150px; */
+    /* margin: 50px 250px; */
+    /* margin: 50px 250px 25px; */
+    /* margin: 50px 250px 25px 0px; */
+    /* margin: 0 auto; */
+
+    /* padding: 150px;
+    padding: 50px 250px;
+    padding: 50px 250px 0;
+    padding: 50px 250px 0 35px; */
+
+    /* margin: 15%; */
+
+    /* margin-top: ;
+    margin-right: 
+    margin=left
+    margin-bottom: ; */
+}
+
+.categories h3 {
+    padding: 0 0 0 50px;
+}
+
+.categories ul {
+    /* display: none; */
+    list-style: none;
+    /* padding-left: 250px; */
+    padding: 0 0 0 50px;
+}
+
+.categories li {
+    /* border: 1px solid green; */
+    /* border-bottom: 2px solid indigo; */
+    padding-left: 50px;
+}
+
+.test-form {
+    /* display: none; */
+    margin: 50px;
+    padding: 10px;
+}
+
+.test-form .form-group {
+    padding: 10px;
+}
+.test-form label {
+    display: block;
+}
+
+/* Atribyrte selector */
+.test-form input[type="text"],
+.test-form input[type="email"],
+.test-form input[type="number"],
+.test-form input[type="submit"],
+.test-form textarea {
+    width: 100%;
+}
+
+.test-form input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    border: 2px solid indigo;
+    height: 50px;
+}
+
+/* X[href="foo"]
+input[type="text"] */
+
+/* p, h1, div {
+
+} */
+
+.button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+
+    font-weight: 600;
+    border-radius: 5px;
+    /* width: 100%; */
+    width: 150px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.clr {
+    clear: both;
+}
+
+/* Float */
+/* #content {
+    float: left;
+    width: 75%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 25%;
+    border: 1px solid black;
+    box-sizing: border-box;
+} */
+
+/* FlexBox */
+.flexBox {
+    margin-top: 20px 0;
+    display: flex;
+}
+
+.p-box {
+    position: relative;
+    border: 2px solid green;
+    margin: 50px 0;
+    width: 650px;
+    height: 450px;
+}
+
+.p-box h1 {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+
+.p-box h2 {
+    position: absolute;
+
+    top: 50px;
+    left: 50px;
+}
+
+.p-fixed {
+    position: fixed;
+    top: 250px;
+    left: 0;
+}
+/* .p-box h1 {
+    position: ;
+} */
+
+/* Sudo clases */
+
+.list {
+    margin-top: 150px;
+    list-style: none;
+}
+.list li {
+    margin: 25px 0;
+}
+
+/* .list li:first-child {
+    color: green;
+} */
+
+/* .list li:last-child {
+    color: red;
+    margin-bottom: 0;
+} */
+
+/* .list li:nth-child(even) {
+    color: red;
+    margin-bottom: 0;
+} */
+
+/* .list li:nth-child(odd) {
+    color: red;
+    margin-bottom: 0;
+} */
+
+/* .list li:nth-child(3n) {
+    color: red;
+    margin-bottom: 0;
+} */
+
+.list li:nth-child(3) {
+    color: red;
+    margin-bottom: 0;
+}
