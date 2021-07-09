@@ -1,0 +1,45 @@
+https://developer.mozilla.org/ru/docs/Web/CSS/Reference
+CSS
+  - подключение стилей
+  - display
+    - none;
+    - inline
+    - block
+    - flex (позже)
+  - селекторы (
+    https://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+    )
+  - class / id / tag
+  - вес (приоритет) селетора ( https://wp-kama.ru/id_5875/30-css-selektorov.html )
+  - цвет
+    - фона;
+    - текста;
+  - шрифты
+  - web-safe fonts ( https://www.w3schools.com/cssref/css_websafe_fonts.asp )
+  - line-height
+  - box-model
+  - margin
+  - padding
+  - border
+  - форматирование текста
+  - списки
+  - ссылки
+  - формы
+  - кнопки
+  - float
+  - box-sizing
+  - позиционирование
+    - static
+    - relative
+    - absolute
+    - fixed
+  - flex-box
+    ( https://tproger.ru/translations/how-css-flexbox-works/ )
+  - псевдоклассы (sudo slases)
+
+
+Валидаторы HTML / CSS
+
+
+Figma
+https://www.figma.com/file/ybRJkdDdZo1KdSBC1YeWQr/Builder_Lviv?node-id=89%3A5
