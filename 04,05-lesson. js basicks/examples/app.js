@@ -1,33 +1,9 @@
-// let colorRed = 'red'
-// let colorYellow = 'yellow'
-// let colorGreen = 'green'
+// Говнокод!
 
-// let traficLight = 'yellow'
+let cases = 15000
 
-// if (traficLight === colorRed) {
-//   console.log('Stop!')
-// } else if (traficLight === colorYellow) {
-//   console.log('Жди!')
-// } else if (traficLight === colorGreen) {
-//   console.log('Go!')
-// } else {
-//   console.log('Поломался светофор!')
-// }
-
-let traficLight2 = 'red'
-switch (traficLight2) {
-  case 'red':
-    console.log('Stop!')
-    break
-
-  case 'yellow':
-    console.log('Жди!')
-    break
-
-  case 'green':
-    console.log('Жди!')
-    break
-
-  default:
-    console.log('Поломался светофор!')
-}
+cases > 10000
+  ? console.log('red zone')
+  : cases > 5000 && cases < 10000
+  ? console.log('yellow zone')
+  : console.log('green zone')
