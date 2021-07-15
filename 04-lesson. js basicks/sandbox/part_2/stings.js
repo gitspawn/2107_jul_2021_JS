@@ -1,131 +1,136 @@
-// Stings
+// Strings
 
 // ''
-
 // ""
+// `` backticks
 
-// ``
+// `${}`
 
-// let firstName = 'Vova';
-// let lastName = 'Smith'
+// let firstName = 'Vova'
+// let lastName = 'Johnson'
 
-// Concatenation
-// let fullName = firstName + " " + lastName
+// let fullName = firstName + ' ' + lastName
 // console.log(fullName)
 
+// ==================================
+// Tempale sting
+// `${}`
+
+// let firstName = 'Vova'
+// let lastName = 'Johnson'
+// let fullName = `${firstName} ${lastName}`
+// console.log(fullName)
+
+// ==============================
 // Append
-let framework = 'React';
-// framework = 'Vue'
-// framework = 'Angular'
+// let product = 'Apple'
+// Long way
+// product = product + ' ' + 'Samsung'
+// product = product + ' ' + 'LG'
 
+// Short way
+// product += ' ' + 'Samsung'
+// product += ' ' + 'LG'
+// console.log(product)
 
-// framework = framework + ' Vue'
-// framework = framework + ' Angular'
+// =================================
+// Lenght
+// let quote = 'To be or not to be!!! sdvgsdfgsdfg'
+// let userName = 'Vova'
+// console.log(quote.length)
+// console.log(userName.length)
 
-// framework += ' Vue'
-// framework += ' Angular'
-// console.log(framework)
+// Symbol position
+// let str = 'To be or not to be!'
+// let char = str[0]
+// char = str[1]
+// char = str[2]
+// char = str[3]
 
+// console.log(char)
 
+// ===========================
+// Find last symbol
+// let status = 'To be or not to be!. Thet is the question'
+// let lastSymbol = status[status.length - 1] // 5
+// console.log(lastSymbol)
 
-// let name = 'Vova';
-// let name = new String('Vova');
-// console.log(name.__proto__)
-// console.log(name)
+// ===================================
+// find index
+// let greet = 'hello world'
+// let showIndex = greet.indexOf('w') // returns index or -1
+// console.log(showIndex)
 
-// let num = 10;
-// console.log(num.constructor)
-// let num = Number(10)
+// =========================
+// charAt
+// let greet = 'hello world'
+// let showChar = greet.charAt(greet.length - 1) // d
+// console.log(showChar)
 
+//=============================
+// Includes - for search in string
+// let greet = 'hello world'
+// let findSomething = greet.includes('hello') // true / false
+// console.log(findSomething)
 
-// let arr = [1, 2, 3, 4];
-// let arr = new Array(1, 2, 3, 4)
-// console.log(arr.__proto__)
-
-// console.log(arr)
-
-
-
-// Length
-// let name = '';
-// console.log(name.length)
-// let hello = 'Hello world'
-// console.log(hello.constructor)
-// console.log(name.length)
-
-// Case
-// hello = hello.toUpperCase()
-// hello = hello.toLowerCase()
-// console.log(hello)
-
-// Symbols
-// let hello = 'hello worldwe1 3 c add sd f  EF DF'
-// let val = hello[0];
-// val = hello[1];
-// val = hello[2];
-// val = hello[3];
-
-// val = hello[10]; // last symbol
-// val = hello[hello.length - 1]; // last symbol
-// console.log(val)
-
-
-// Get index
-// let hello = 'helo word'
-// let val = hello.indexOf('h');
-// val = hello.indexOf('U'); // -1
-// val = hello.lastIndexOf('l'); // -1
-// console.log(val)
-
-
-// charAt()
-// let hello = 'hello world';
-// let val = hello.charAt(0)
-// val = hello.charAt(1)
-
-// console.log('a'.charCodeAt(0))
-// console.log('b'.charCodeAt(0))
-// console.log('c'.charCodeAt(0))
-
-
+// ============================
 // Substring
-// let hello = 'hello world';
-// let val = hello
-// let val = hello.substr()
-// let val = hello.substr(0, 5)
-// let val = hello.substr(1, 5)
-// console.log(val)
+// let greet = 'hello world'
+// let result = greet.substring() // 'hello world'
+// let result = greet.substring(0) // 'hello world'
+// let result = greet.substring(1) // 'ello world'
+// let result = greet.substring(2) // 'llo world'
+// let result = greet.substring(3) // 'lo world'
+// let result = greet.substring(0, 1) // 'h'
+// let result = greet.substring(0, 2) // 'he'
+// let result = greet.substring(0, 3) // 'hel'
+// let result = greet.substring(1, 4) // 'hel'
+// console.log(result)
 
-
+// ================================
 // Slice
-// let hello = 'hello world';
-// // let val = hello.slice()
-// let val = hello.slice(0, 5)
-// val = hello.slice(1, 5)
-// console.log(val)
+// let greet = 'hello world'
+// let result = greet.slice() // 'hello world
+// let result = greet.slice(0) // 'hello world
+// let result = greet.slice(1) // 'ello world
+// let result = greet.slice(0, 3) // 'hel"
+// let result = greet.slice(1, 3) // 'el'
+// console.log(result)
 
+// ====================================
+// split.reverse.join
 
-// Split
-// let hello = 'hello/world/asdfASDAFADF';
-// let hello = 'hello world asdfASDAFADF';
-// let val = hello.split(' ');
-// let val = hello.split('/');
-// let val = hello.split('o');
-// console.log(typeof val)
-// console.log(Array.isArray(val))
-// console.log(val)
+// let greet = 'hello world'
 
+// let result = greet.split(' ') // converts to array
+// console.log(result)
+// console.log(typeof result)
 
+// Reverse string
+// let result = greet.split('').reverse().join('')
+// console.log(result)
+
+// let uri = 'https://www.youtube.com/watch?v=_PgWxvu9rCw&q=pizza&author=mozart'
+
+// let parsUri = uri.split('=')
+// console.log(parsUri)
+
+// =======================================
 // Replace
-// let hello = 'hello spam world';
-// let val = hello.replace('spam', 'pizza')
-// console.log(val)
+// let userMessage = 'hello spam world and spam people'
+// let result = userMessage.replace('spam', 'best')
+// console.log(result)
 
+// ========================================
+''.toUpperCase()
+''.toLowerCase()
+// ''.toLocaleUpperCase()
+// ''.toLocaleLowerCase()
 
-// Includes
-let ban = 'spam';
-let hello = 'hello spam world';
-let val = hello.includes(ban)
-console.log(val)
+// let greet = 'hello world'
+// let newMsg = greet.toUpperCase()
+// console.log(newMsg)
 
-
+// let greet = 'hElLo WoRlD'
+// let newMsg = greet.toLowerCase()
+// console.log(newMsg)

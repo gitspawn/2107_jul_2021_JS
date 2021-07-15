@@ -1,130 +1,101 @@
+// Boolean
+// Ветвления
 // Conditions
 
-// if (Boolean) {
+/*
 
+    0
+    '' - пустая строка
+    undefined
+    null
+    NaN
+    false
+
+*/
+
+// if( Boolean ) {
 // }
 
-// true
-// false
+// if( Boolean ) {
+// } else {}
 
-// if (true) {
-//   console.log('Hello');
+// let userName = 'Vova'
+
+// if (userName) {
+//   console.log('Hello', userName)
 // }
 
-
-// if (null) {
-//   console.log('Hello');
-// }
-
-
-// if (null) {
-//   console.log('pizza')
+// let isAdmim = true
+// if (2 + 2 == 5) {
+//   console.log('Hello admin')
 // } else {
-//   console.log('no data')
+//   console.log('Hello guest')
 // }
 
+// let admin = 'Sara'
 
-
-// if (false) {
-//   console.log(100)
-// } else if (2 + 2 !== 4) {
-//   console.log(200)
+// if (admin === 'Vova') {
+//   console.log(`Hello ${admin}`)
+// } else {
+//   console.log('You are the guest...')
 // }
 
-// else if (2 + 2 == 4) {
-//   console.log(200)
-// }
-
-// else if (2 + 2 == 4) {
-//   console.log(200)
-// }
-
-// else if (2 + 2 == 4) {
-//   console.log(200)
-// }
-
-// else {
-//   console.log('Error')
-// }
-
-
-
-// let colorRed = 'red';
+// let colorRed = 'red'
+// let colorYellow = 'yellow'
 // let colorGreen = 'green'
 
-// if (colorGreen === colorRed) {
-//   console.log('Stop!');
-// } else {
+// let traficLight = 'magenta'
+
+// if (traficLight === colorRed) {
+//   console.log('Stop!')
+// } else if (traficLight === colorYellow) {
+//   console.log('Жди!')
+// } else if (traficLight === colorGreen) {
 //   console.log('Go!')
+// } else {
+//   console.log('Поломался светофор!')
 // }
 
-
-// if (colorRed === 'green') {
-//   console.log('Stop!');
-// } else {
-//   console.log('Go!')
-// }
-
-
-
-
-let leapYear = 2001;
+// let leapYear = 2016
 
 // if (leapYear % 4 == 0) {
-//   console.log('Высокосный')
-// } else if (leapYear % 4 !== 0) {
-//   console.log('He высокосный')
-// }
-
-// if (leapYear % 4 == 0) {
-//   console.log('Высокосный')
+//   console.log('Leap year')
 // } else {
-//   console.log('He высокосный')
+//   console.log('Wrong Year')
 // }
 
-// let adminPass = 1111;
-// let pass = prompt('Enter password')
-// let pass = Number(prompt('Enter password'))
-// console.log(typeof pass)
-
-// if (pass === adminPass) {
-//   console.log('%cHello Admin', 'color: green; font-size: 24px')
-// } else if (pass === 2222) {
-//   console.log('%cHello Moderator', 'color: yellow; font-size: 24px')
-// } else if (pass !== adminPass && pass !== 2222) {
-//   console.log('%cAccess error', 'color: red; font-size: 24px')
-// } else {
-//   console.log('%cPlease provide password', 'color: red; font-size: 24px')
-// }
-
-
-// TERNARY OPERATOR
+// Ternary Operator
 // ?
-// (Boolean) ? true : false
 
-// let cases = 12000;
-// (cases < 15000) ? console.log('Ok') : console.log('Lockdown')
-
-// if (cases < 15000) {
-//   console.log('Ok');
+// Boolean ? true : false
+// let leapYear = 2015
+// if (leapYear % 4 == 0) {
+//   console.log('Leap year')
 // } else {
-//   console.log('Lockdown')
+//   console.log('Wrong Year')
 // }
 
+// leapYear % 4 == 0 ? console.log('Leap year') : console.log('Wrong Year')
 
+// ГОВНОКОД
+// let cases = 15000
+// cases > 10000
+//   ? 5 == 5
+//     ? console.log(5)
+//     : console.log(0)
+//   : console.log('Free to go')
+// ГОВНОКОД
 
-// Includes
-// let ban = 'spam';
-// let hello = 'hello spam world';
-// let val = hello.includes(ban)
-// console.log(val)
+// let isAdmin = true
 
-// if (val) {
-//   console.log('Need to moderate')
-// } else {
-//   console.log('Go life')
+// // Сатанизм!!!
+// if (isAdmin === true) {
+//   console.log('Admin')
 // }
 
-// val
-//   ? console.log('Need to moderate')
-//   : console.log('Go life')
+// let leapYear = 2016
+// let result = leapYear % 4 == 0 ? true : false
+
+// if (result) {
+//   console.log('Leap year')
+// }

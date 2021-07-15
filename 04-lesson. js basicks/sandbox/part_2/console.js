@@ -1,18 +1,16 @@
-let user = 'Vova';
-// let arr = ['vova', 'sveta', true, 100, [1, 2, 3]]
+let arr = [1, 2, 3, 4, 5]
 
-// window.console.log('Vova')
-
-// window.prompt('Введите чмсло');
-// console.log(user)
-// console.error(user)
+// console.log('Vova')
+// console.table([1, 2, 3, 4, 5])
+// console.table({ name: 'Sara', age: 25 })
+// console.log(arr)
 // console.dir(arr)
-// console.table(arr)
-// console.table(user)
+// console.log('Sara')
+// console.error('Sara')
 
+// console.log(
+//   `%c${arr}`,
+//   'color: green; font-size: 18px; background-color: white',
+// )
 
-// console.error(`%c${user}`,
-//   'color: green; font-size: 32px; border: 2px solid red; background-color: white')
-
-// Чистим консоль
-// clear()
+// window.console.log(arr)
