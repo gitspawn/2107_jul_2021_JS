@@ -1,0 +1,20 @@
+Docs 
+https://devdocs.io/
+https://www.ecma-international.org/wp-content/uploads/ECMA-262_12th_edition_june_2021.pdf
+
+Задачи
+http://old.code.mu/tasks/javascript/
+
+
+
+Функции
+ - Порядок выполнения кода
+ - Стрелочные ф-ции
+ - Параметры по умолчанию
+ - Arguments
+ - Return
+ - Function expressions, Function Declaration
+ - Hoisting (для функций)
+ - Hoisting (для переменных)
+ - Область видимости
+
