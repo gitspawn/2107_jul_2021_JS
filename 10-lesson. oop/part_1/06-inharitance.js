@@ -1,26 +1,26 @@
 // ES5 Inharitance - наследование
 
-// function Product(brand, price, discount) {
-//     this.brand = brand;
-//     this.price = price;
-//     this.discount = discount;
-// }
+function Product(brand, price, discount) {
+    this.brand = brand;
+    this.price = price;
+    this.discount = discount;
+}
 
-// Product.prototype.showInfo = function () {
-//     console.log(`Brand: ${this.brand} Price: ${this.price}`);
-// };
+Product.prototype.showInfo = function () {
+    console.log(`Brand: ${this.brand} Price: ${this.price}`);
+};
 
-// Product.prototype.getDiscountPrice = function () {
-//     let finalPrice = (this.price * (100 - this.discount)) / 100;
+Product.prototype.getDiscountPrice = function () {
+    let finalPrice = (this.price * (100 - this.discount)) / 100;
 
-//     console.log(finalPrice);
-// };
+    console.log(finalPrice);
+};
 
-// // To instantiate
-// let samsung = new Product("Samsung", "9000", 10);
-// let apple = new Product("Apple", "35000", 15);
-// console.log(samsung);
-// console.log(apple);
+// To instantiate
+let samsung = new Product("Samsung", "9000", 10);
+let apple = new Product("Apple", "35000", 15);
+console.log(samsung);
+console.log(apple);
 
 // ================================================
 
