@@ -1,0 +1,20 @@
+#Императивный и декларативный код
+#Чистые функции
+#Функциональные методы массивов
+    forEach()
+    map()  must return something
+    filter() must return something
+    find() must return something
+    every() must return something
+    some() must return something
+    sort() must return something
+    reduce() must return something
+#Чейниниг
+
+   
+Нельзя в домашке:
+- Set()
+- WeakMap()
+- flatMap()
+- flat()
+- reduceRight()

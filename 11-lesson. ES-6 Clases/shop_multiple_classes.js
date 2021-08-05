@@ -27,6 +27,10 @@ class DispalayItems {
 }
 
 class ShopDataProcessing {
+    constructor(items) {
+        this.items = items;
+    }
+
     addItem({ name, price, amount, category }) {
         let item = {
             name,
@@ -36,9 +40,34 @@ class ShopDataProcessing {
         };
         return item;
     }
-}
 
-let shopData = new ShopDataProcessing();
+    updateItem(productName, newName) {
+        for (let item of this.items) {
+            if (item.name === productName) {
+                item.name = newName;
+            } else {
+                this.items = {};
+            }
+        }
+        return this.items;
+    }
+
+    removeItem(productName) {
+        for (let item of this.items) {
+            if (item.name === productName) {
+                console.log(this.items);
+                let index = this.items.indexOf(item);
+
+                this.items.splice(index, 1);
+                console.log(this.items);
+                return (this.items = this.items.splice(index, 1));
+            } else {
+                this.items = [];
+            }
+        }
+        return this.items;
+    }
+}
 
 class Shop {
     #items; // private field
@@ -47,6 +76,7 @@ class Shop {
         this.name = name;
         this.adress = adress;
         this.#items = items;
+        this.items2 = items;
     }
 
     // showItems() {
@@ -68,6 +98,28 @@ class Shop {
         };
 
         this.#items = [...this.#items, addId];
+    }
+    updateItem(productName, newName) {
+        let shopData = new ShopDataProcessing(this.#items);
+        let ckeckItems = Object.keys(shopData.updateItem(productName, newName));
+
+        if (ckeckItems.length) {
+            this.#items = shopData.updateItem(productName, newName);
+        } else {
+            console.log("Не нашли, не могу обновить...");
+        }
+    }
+
+    removeItem(productName) {
+        let shopData = new ShopDataProcessing(this.#items);
+
+        let ckeckItems = shopData.removeItem(productName);
+
+        if (ckeckItems.length) {
+            this.#items = shopData.removeItem(productName);
+        } else {
+            console.log("Не нашли, не могу удалить...");
+        }
     }
 
     // Private method
@@ -91,5 +143,6 @@ let ATB = new Shop("ATB", "Kyiv", items);
 
 // ATB.addItem({ name: "kumkwat", price: 100, amount: 450, category: "fruits" });
 
-ATB.updateItem("apples", "apples gold");
-ATB.showItems();
+// ATB.updateItem("potato", "++apples++");
+ATB.removeItem("potato");
+// ATB.showItems();
