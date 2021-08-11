@@ -22,7 +22,6 @@ function createLi(text) {
 }
 
 // console.log(createLi("Hello"));
-
 let menu = items.map((menuItem) => {
     return createLi(menuItem);
 });
