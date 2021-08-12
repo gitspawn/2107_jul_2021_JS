@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form submit Event</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Form submit Event</h1>
+
+    <!-- <p><a href="/">Main page</a></p> -->
+
+    <a href="https://translate.google.ru/" target="_blank">Google</a>
+
+    <!-- form submit event -->
+    <form class="js-register-form"> 
+      <div role="group">
+        <label>
+          Name
+          <input name="name" type="text" autocomplete="off" placeholder="Hello Vova" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="off" />
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" />
+        </label>
+      </div>
+
+      <br />
+
+      <div role="group">
+        <b>Seletct plan:</b>
+        <label>
+          <input type="radio" name="subscription" value="free" />
+          Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic" />
+          Basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro" />
+          Pro
+        </label>
+      </div>
+
+      <br />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <script src="./js/02-forms.js" type="module"></script>
+  </body>
+</html>

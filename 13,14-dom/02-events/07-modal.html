@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal window</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+  <body>
+    <h1>Modal window</h1>
+
+    <button class="button" data-action="open-modal">Open Modal</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptatem quis rerum facere beatae libero, ipsa, esse non officia nihil itaque doloribus, totam nam accusamus dolores placeat pariatur minus tenetur.
+        </p>
+        <button type="button" class="button" data-action="close-modal">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/07-modal.js" type="module"></script>
+  </body>
+</html>

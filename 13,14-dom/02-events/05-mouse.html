@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>События мыши</title>
+    <style>
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        background-color: maroon;
+        transition: background-color 200ms ease-in;
+      }
+
+      .box--active {
+        background-color:green;
+      }
+
+      .inner-box {
+        width: 75px;
+        height: 75px;
+        background-color:yellow;
+    
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouse events</h1>
+
+  
+
+    <div class="box js-box">
+      <div class="inner-box"></div>
+    </div>
+
+    <script src="./js/05-mouse.js" ></script>
+  </body>
+</html>
