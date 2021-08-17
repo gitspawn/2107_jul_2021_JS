@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Event Bubbling</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  
+    <style>
+      #parent,
+      #child,
+      #inner-child {
+        margin: 5%;
+        padding: 16px;
+        outline: 1px solid yellow;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      #parent {
+        background-color:purple;
+      }
+
+      #child {
+        background-color:#009900;
+      }
+
+      #inner-child {
+        background-color:#3366cc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Bubuling</h1>
+
+    
+    <div id="parent">
+      PARENT
+      <div id="child">
+        CHILD
+        <div id="inner-child">INNER-CHILD</div>
+      </div>
+    </div>
+
+    <script src="./js/01-bubbling.js" type="module"></script>
+  </body>
+</html>

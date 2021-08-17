@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Observer</title>
+	</head>
+	<body>
+		<strong id="warning" hidden
+			>IntersectionObserver is not supported by your browser!
+		</strong>
+		<noscript>JAVASCRIPT IS DISABLED IN YOUR BROWSER!</noscript>
+
+		<h1>Scroll down and see images lazy load at the mark</h1>
+
+		<img
+			src="600px-PlaceholderLC.png"
+			data-src="https://images.unsplash.com/photo-1504272017915-32d1bd315a59?fit=crop&w=600&q=80"
+		/><br />
+		<img
+			src="600px-PlaceholderLC.png"
+			data-src="https://images.unsplash.com/photo-1502716643504-c4ea7b357d91?fit=crop&w=600&q=80"
+		/><br />
+		<img
+			src="600px-PlaceholderLC.png"
+			data-src="https://images.unsplash.com/photo-1502716716838-6ad177344906?fit=crop&w=600&q=80"
+		/><br />
+
+		<p>=== Box ===</p>
+		<img
+			src="600px-PlaceholderLC.png"
+			data-src="https://images.unsplash.com/photo-1504271933050-2cf260bbec95?fit=crop&w=600&q=80"
+			class="js-observe-box"
+		/>
+		<p>=== Box ===</p>
+		<br />
+		<img
+			src="600px-PlaceholderLC.png"
+			data-src="https://images.unsplash.com/photo-1502716197620-bf14ce1651b3?fit=crop&w=600&q=80"
+		/><br />
+
+		<div id="mark">200px above viewport</div>
+
+		<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script> -->
+		<script src="./obsever.js"></script>
+	</body>
+</html>
