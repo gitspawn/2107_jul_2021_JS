@@ -1,0 +1,46 @@
+Node.js — легкая и эффективная среда выполнения JavaScript. Позволяет писать высокопроизводительные серверные приложения и инструменты. Node.js построен на JavaScript-движке V8 и написан на C++, поэтому он быстрый.
+Изначально Node.js создавался как серверное окружение для приложений, но разработчики начали использовать его для создания инструментов, помогающих автоматизировать выполнение локальных задач. В итоге возникшая вокруг Node.js новая экосистема инструментов (вроде Grunt и Gulp), привела к трансформации процесса фронтенд-разработки.
+
+
+NPM (node package manager) - пакетный менеджер Node.js. Он устанавливает нужные пакеты и предоставляет удобный интерфейс для работы с ними.
+
+
+npm init — инициализирует npm и создает файл package.json
+npm install — устанавливает все зависимости перечисленные в package.json
+npm list --depth=0 - выведет в терминале список локально установленных пакетов с номерами их версий, без зависимостей
+npm install [package-name] — установит пакет локально в папку node_modules
+npm uninstall [package-name] — удалит пакет установленный локально и обновит package.json
+npm start и npm test — запустит скрипт start или test, расположенный в package.json
+npm run [custom-script] — запустит кастомный скрипт, расположенный в package.json
+npm outdated — используется для поиска обновлений, обнаружит совместимые версии программно и выведет список доступных обновлений
+npm update — обновит все пакеты до максимально разрешенной версии
+npm cache clean - скинуть кеш
+
+--save — указывает что добавляется зависимость которая войдет в финальный продукт. Пакет будет установлен локально, в папку node_modules, и будет добавлена запись в поле dependencies в package.json.
+--save-dev — указывает что добавляется зависимость разработки. Пакет будет установлен локально, в папку node_modules, и будет добавлена запись в поле devDependencies в package.json.
+--global — указывает что добавляется глобальная зависимость, то есть инстурумент который доступен для любого проекта. Пакет будет установлен глобально (в систему).
+
+
+
+NPMJS
+https://www.npmjs.com/
+
+
+npm-check-updates
+https://www.npmjs.com/package/npm-check-updates
+
+
+NodeJS
+https://nodejs.org/en/
+
+
+Express framework
+http://expressjs.com/
+
+
+npm trends
+https://www.npmtrends.com/express-vs-koa-vs-restify-vs-hapi-vs-loopback-vs-fastify
+
+
+Yarn
+https://classic.yarnpkg.com/en/docs/migrating-from-npm#toc-cli-commands-comparison

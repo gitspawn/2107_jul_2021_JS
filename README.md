@@ -15,3 +15,6 @@
 
 11. git remote
 12. git remote -v
+
+Git Token
+https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
