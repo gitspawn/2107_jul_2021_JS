@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: teal;
+}
+
+img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
