@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="feedback-form js-feedback-form">
+      <div class="row">
+        <div class="five columns">
+          <label for="exampleNameInput">Your Name</label>
+          <input
+            name="name"
+            class="u-full-width"
+            type="text"
+            placeholder="User name"
+            id="exampleNameInput"
+          />
+
+          <label for="exampleMessage">Message</label>
+          <textarea
+            name="message"
+            class="u-full-width"
+            placeholder="Hi User …"
+            id="exampleMessage"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <input class="button-primary" type="submit" value="Submit" />
+    </form>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="./form.js"></script>
+  </body>
+</html>

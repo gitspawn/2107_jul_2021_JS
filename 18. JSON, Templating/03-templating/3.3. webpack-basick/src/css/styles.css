@@ -1,0 +1,12 @@
+body {
+    background-color: teal;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    color: white;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
