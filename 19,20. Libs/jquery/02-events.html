@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+  <style>
+    header {
+      background-color: darkcyan;
+      color: white;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    #container {
+      width: 85%;
+      margin: auto;
+      padding: 5px;
+    }
+
+    img {
+      display: block;
+      width: 300px;
+      height: auto;
+    }
+
+    .btn-myButton {
+      color: darkgreen;
+      background-color: darkolivegreen;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+  <header>Jquery Events</header>
+  <hr>
+  <button id="btn1" class="btn">Button_01</button>
+  <button id="btn2">Button_02</button>
+
+  <hr>
+  <div id="chords">div wiht some text</div>
+  <hr>
+
+  <p class="para_01">
+    jQuery is a fast, small, and feature-rich JavaScript library. It makes
+    things like <span>HTML document traversal and manipulation</span>, event
+    handling, animation, and Ajax much simpler with an easy-to-use API that
+    works across a multitude of browsers.
+  </p>
+
+  <hr>
+        <div id="chords">dsdfdsfd</div>
+        <hr>
+        <p class="para_01">
+          jQuery is a fast, small, and feature-rich JavaScript library. It makes
+          things like <span>HTML document traversal and manipulation</span>, event
+          handling, animation, and Ajax much simpler with an easy-to-use API that
+          works across a multitude of browsers.
+        </p>
+
+        <hr>
+        <form id='form'">
+          <b>Select plan:</b>
+          <br>
+          <label>Name</label>
+          <input type="text" name="name" id="name" autocomplete="off">
+          <br>
+          <label>Email</label>
+          <input type="email" name="email" id="email" autocomplete="off">
+          <div role="group">
+            <label>Free
+              <input type="radio" name="subscription" value='Free' >
+            </label>
+            <label>Basic
+              <input type="radio" name="subscription" value='Basic'>
+            </label>
+            <label>Pro
+              <input type="radio" name="subscription" value='Pro'>
+            </label>
+          </div>
+          <!-- <input type="submit" value="Submit"> -->
+          <button type="submit">Sunmit</button>
+        </form>
+        <hr>
+    </div>
+
+  
+    <script>
+
+      // Vanila JS
+      // DOMContentLoaded vs load
+
+      // JQ -> load
+      $(document).ready(function () {
+        // $('#btn1').hide()
+
+        // $('#btn1').click(function (event) {
+        //   // $('#btn2').hide()
+        //   // $('#btn2').toggle()
+        //   console.log(event)
+        //   console.log(event.target)
+        // })
+
+        // $('#btn1').dblclick(function (event) {
+        //     // console.log('dblclick')
+        // })
+          
+        // $('#btn1').hover(function (event) {
+        //     $('#chords').css('color', 'red')
+        // })
+
+        // $('#btn1').on('click', function(event){
+        //   // console.log(event.target)
+        // })
+
+        // $('#btn1').on('mousemove', function(event){
+        //   console.log( event.clientX,
+        //   event.clientY)
+        // })
+        
+        // =============================
+        // Form events 
+
+        // $('input').on('focus', function(event){
+        //   console.log('Focus')
+        //   // console.log(event.target)
+        //   // console.log(event.currentTarget)
+        //   $(event.currentTarget).css('background-color', 'pink')
+        // })
+
+        // $('input').on('blur', function(event){
+        //   $(event.currentTarget).css('background-color', 'white')
+        // })
+
+        // $('input').on('input', function(){
+        //   console.log(event.currentTarget.value)
+        // })
+
+        // $('input').on('change', function(){
+        //   console.log(event.currentTarget.value)
+        // })
+        
+
+        // $('form#form').on('submit', function(event){
+        //   event.preventDefault();
+        //   let formRef = event.target;
+        //   // console.log(formRef.elements)
+        //   console.log(formRef.elements.subscription.value)
+        // })
+
+        
+        // =============================
+        // Keyb events
+        // $('input').on('keypress', function(){
+        //   console.log(event.currentTarget.value)
+        // })
+
+      })
+
+      
+
+
+    </script>
+
+</body>
+
+</html>

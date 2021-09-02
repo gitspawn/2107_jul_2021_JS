@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        header {
+            background-color: darkcyan;
+            color: white;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        #container {
+            width: 85%;
+            margin: auto;
+            padding: 5px;
+        }
+
+        img {
+            display: block;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Jquery Selectors</header>
+    <div id="container">
+        <a href="https://google.com">Google</a>
+        <a href="https://yahoo.com">Yahoo</a>
+
+        <h1 class="heading1">Heading 1</h1>
+        <p class="paragraph1">
+            jQuery is a fast, small, and feature-rich JavaScript library. It
+            makes things like
+            <span style="color:aqua">HTML document traversal and manipulation</span>, event
+            handling, animation, and Ajax much simpler with an easy-to-use
+            API that works across a multitude of browsers.
+        </p>
+        <h1 class="heading2">Heading 2</h1>
+        <h1 class="heading3" id="main_heading">Heading 3</h1>
+        <p class="paragraph2">
+            Aside from the change to no longer ensure XHTML-compliant tags
+            for you, we do not expect other compatibility issues when
+            upgrading from a
+            <span>jQuery 3.0+ version</span>. To upgrade, have a look at the
+            new 3.5 Upgrade Guide. If you haven’t yet upgraded to jQuery 3+,
+            first have a look at the 3.0 Upgrade Guide.
+        </p>
+
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+        </ul>
+
+        <button type="submit">Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+
+        <hr />
+        <img src="https://images.pexels.com/photos/6957281/pexels-photo-6957281.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="" width="300" />
+        <img src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            width="400" />
+    </div>
+
+
+    <script>
+        // console.log($) // JQuery
+        // Vanila JS
+        let btnSubmit = document.querySelector('button[type="submit"]')
+        btnSubmit.addEventListener( 'click', ()=>{
+            console.log('btnSubmit click!')
+        })
+        //Jquery
+        // $(<css selector>).jqmethod(callback)
+
+
+        //    $('button[type="button"]').click(function (event) {
+        //        console.log(event)
+        //        console.log('button[type="button"]')
+        //    })
+
+        // $('button[type="button"]').on('click', function (event) {
+        //     console.log('button[type="button"]')
+        // })
+
+        // JQuery alias
+        // let vova = jQuery.noConflict();
+        // vova('.heading1').hide()
+
+
+        // JQ Selectors
+        // $('h1').hide()
+        // $('h1').hide()
+        // $('h1.heading2').hide()
+        // $('p.paragraph1 span').hide()
+        // $('p.paragraph1 span').css('color', 'red')
+        // $('#main_heading').hide()
+        // $('ul li:first').css('color', 'blue')
+        // $('ul li:first').css('font-style', 'italic')
+        // $('ul li:first').css('font-weight', '600')
+        // $('ul li:last').css('font-weight', '600')
+        // $('ul li:nth-child(odd)').css('color', 'red')
+        // $('ul li:nth-child(even)').css('color', 'red')
+        // $('ul li:nth-child(5)').css('color', 'red')
+        // $('ul li:nth-child(2)').css('color', 'red')
+        // $('ul li:nth-child(2n)').css('color', 'red')
+        // $('ul li:nth-child(2n-1)').css('color', 'red')
+
+        // $('*').hide()
+
+
+
+    </script>
+  
+</body>
+
+</html>

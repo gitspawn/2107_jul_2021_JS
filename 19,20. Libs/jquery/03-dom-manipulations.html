@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    header {
+      background-color: darkcyan;
+      color: white;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    #container {
+      width: 85%;
+      margin: auto;
+      padding: 5px;
+    }
+
+    img {
+      display: block;
+      width: 300px;
+      height: auto;
+    }
+
+    .btn-myButton {
+      color: darkgreen;
+      background-color: darkolivegreen;
+    }
+
+    .myClass {
+      color: white;
+      background-color: darkolivegreen;
+    }
+
+    .main-paragraph{
+      background-color: aqua;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header>Jquery DOM</header>
+  <button id="btn1" class="btn">Button_01</button>
+  <h1 class="heading1">Heading 1</h1>
+  <p class="qwe paragraph1">
+    jQuery is a fast, small, and feature-rich JavaScript library. It makes
+    things like <span>HTML document traversal and manipulation</span>, event
+    handling, animation, and Ajax much simpler with an easy-to-use API that
+    works across a multitude of browsers.
+  </p>
+  <h1 class="heading2">Heading 2</h1>
+  <p class="paragraph2">
+    Aside from the change to no longer ensure XHTML-compliant tags for you,
+    we do not expect other compatibility issues when upgrading from a
+    <span>jQuery 3.0+ version</span>. To upgrade, have a look at the new 3.5
+    Upgrade Guide. If you haven’t yet upgraded to jQuery 3+, first have a
+    look at the 3.0 Upgrade Guide.
+  </p>
+
+  <div id="myDiv">
+    Hello world!!!
+  </div>
+
+
+  <input type="text" name="" id="newListItem">
+
+
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <hr>
+
+  <!-- // List -->
+  <ul id="users"></ul>
+
+  <a href="https://google.com">Google</a>
+  </div>
+
+ 
+  <script>
+    $(document).ready(function(){
+      // $('#btn1').click(function(){
+      //   // $('.heading1').css('color', 'magenta')
+      //   $('.heading1').css({
+      //     'color': 'magoon',
+      //     'background-color': 'green',
+      //     'text-decoration': 'underline',
+      //     'font-style': 'italic'
+      //   })
+      // })        
+
+      // $('.paragraph1').hover(function(event){
+      //   $(event.currentTarget).addClass('main-paragraph')
+      // })
+
+      // $('#btn1').click(function(){
+      //   $('.paragraph1').removeClass('main-paragraph')
+      // })
+
+      // $('#btn1').click(function(){
+      //   $('.paragraph1').toggleClass('main-paragraph')
+      // })
+
+      // $('#myDiv').text('Совы не то чем кажутся')
+    
+      // $('#myDiv').html('<h1>To be or not to be</h1>')
+    
+      // $('#myDiv').on('mouseenter', function(event){
+      //     $(event.target).text('Come with me if you want to live')
+      // // console.log('dsafasdf')
+      //     })
+
+      // $('#myDiv').on('mouseleave', function(event){
+      //     $(event.target).text('Бедный Ерик!!!')
+      //   // console.log('dsafasdf')
+      // })
+
+      // $('ul#list').appendTo('header')
+
+      // $('ul#list').appendTo('.paragraph1')
+
+      // $('ul#list').appendTo('.paragraph2')
+
+      // $('ul#list').append("<li>Hello</li>")
+
+      // $('ul#list').before("<h1>To be or not to be</h1>")
+
+      // $('ul#list').after("<h1>To be or not to be</h1>")
+
+
+      // ===========================
+      // Remove
+      // $('ul#list').hide() // display none
+      // $('ul#list').remove()
+      // $('ul#list').detach()
+      // $('ul#list').empty()
+
+      //========================
+      // Wrap
+      // $('.paragraph1').wrap('<h2>')
+      // $('p').wrapAll('<h4>')
+
+
+      //==========================
+      //Attribuse
+      // $('a[href="https://google.com"]').attr('taget', '_blanc')
+      // $('a[href="https://google.com"]').removeAttr('taget')
+
+
+
+
+      // let users = ['Vova', "Sara", "Bob", "Mike"]
+      //   $.each(users, function(idx, user){
+      //     $('#users').append(`<li>${user}</li>`)
+      //   })
+
+
+      // $('input[type="text"]').on('keypress',  function(event){
+      //   if(event.code === 'Enter') {
+      //     $('ul#list').append(`<li>${event.target.value}</li>`)
+      //   } 
+      // })
+
+
+      })
+
+     
+  </script>
+
+</body>
+
+</html>s

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JQuery animations</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    #container {
+      width: 85%;
+      margin: auto;
+      padding: 5px;
+    }
+
+    #box {
+      background-color: darkslategray;
+      color: white;
+      width: 350px;
+      height: 100px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    #box-2 {
+      background-color: magenta;
+      width: 50px;
+      height: 50px;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <button id="btnFadeIn">FadeIn</button>
+    <button id="btnFadeOut">FadeOt</button>
+    <button id="btnFadeToggle">FadeToggle</button>
+    <hr />
+
+    <button id="btnSlideUp">Slide Up</button>
+    <button id="btnSlideDown">Slide Down</button>
+    <button id="btnSlideToggle">Slide Toggle</button>
+    <button id="btnStop">Stop</button>
+
+    <hr />
+    <div id="box">
+      <h2>Hello JQuery animations</h2>
+    </div>
+    <hr />
+
+    <button id="btnMoveRight">Move Right</button>
+    <button id="btnMoveLeft">Move Left</button>
+    <button id="btnMoveCircle">Move Circle</button>
+    <div id="box-2"></div>
+
+    <div style="margin-top: 100px"></div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      // .fadeIn()
+      // .fadeOut()
+      // .fadeToggle()
+
+      // $('#btnFadeOut').on('click', function(){
+      //   $('#box').fadeOut()
+      // })
+
+      // $('#btnFadeIn').on('click', function(){
+      //   $('#box').fadeIn()
+      // })
+
+      // $('#btnFadeToggle').on('click', function(){
+      //   $('#box').fadeToggle()
+      // })
+
+  //  $('#btnFadeOut').on('click', function(event){
+  //       $('#box').fadeOut(1500)
+  //     $(event.currentTarget).css({
+  //       'color': 'white',
+  //       'background-color': 'black'
+  //     })
+  //   })
+
+  // $('#btnFadeOut').on('click', function(event){
+  //       $('#box').fadeOut(1500, function(){
+  //         $(event.currentTarget).css({
+  //           'color': 'white',
+  //           'background-color': 'black'
+  //         })
+  //       })
+  //   })
+
+    
+  //   $('#btnFadeIn').on('click', function(event){
+  //     $('#box').fadeIn(1500, function(){
+  //       $(event.currentTarget).css({
+  //           'color': 'maroon',
+  //           'background-color': 'yellow'
+  //         })
+  //     })
+  //   })
+
+  // ===========================================
+
+    // $('#btnSlideUp').on('click', function(){
+    //   $('#box').slideUp(1500, function(){})
+    // })
+
+    // $('#btnSlideDown').on('click', function(){
+    //   $('#box').slideDown(1500, function(){})
+    // })
+
+    // $('#btnSlideToggle').on('click', function(){
+    //   $('#box').slideToggle(3000, function(){})
+    // })
+
+    // $('#btnStop').on('click', function(){
+    //   $('#box').stop()
+    // })
+
+    // ====================================
+    // Amimate
+
+    // $('#btnMoveRight')
+    // $('#btnMoveLeft')
+    // $('#btnMoveCircle')
+
+    // $('#btnMoveRight').click(function(){
+    //   $('#box-2').animate({
+    //     left: 400
+    //   })
+    // })
+
+    // $('#btnMoveLeft').click(function(){
+    //   $('#box-2').animate({
+    //     left: 0
+    //   })
+    // })
+
+    // $('#btnMoveCircle').click(function(){
+    //   let box =  $('#box-2');
+
+    //   box.animate({
+    //     left: 400
+    //   })
+
+    //   box.animate({
+    //     top: 400
+    //   })
+
+    //   box.animate({
+    //     left: 0,
+    //     top: 400
+    //   })
+
+    //   box.animate({
+    //     top: 0
+    //   })
+    // })
+
+    setInterval(()=>{
+      let box =  $('#box-2');
+        box.animate({
+          left: 400
+        })
+
+        box.animate({
+          top: 400
+        })
+
+        box.animate({
+          left: 0,
+          top: 400
+        })
+
+        box.animate({
+          top: 0
+        })
+    }, 0)
+
+    1
+// $('.element').bezier({
+// 2
+//   animate :true,
+// 3
+//   animationDirection :'right',
+// 4
+//   animationDuration : 0.75
+// 5
+// });
+
+
+
+    })
+  </script>
+
+</body>
+
+</html>
+
+<!-- https://cubic-bezier.com/#.3,.85,.97,.45 -->
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Использование jQuery метода .animate() (использование объекта со свойствами)</title>
+		<style>CSS стили</style>		
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+	$( document ).ready(function(){
+	  $( ".start" ).click(function(){ // задаем функцию при нажатиии на элемент с классом start
+	    $( "div" ).animate({
+	      width: "90%", // ширина элемента
+	      opacity: 0.5, // прозрачность элемента
+	      height: "150px", // высота элемента
+	      fontSize: "2em", // размер шрифта элемента
+	      borderWidth: "5px" // ширина границ элемента
+	    });
+	  });
+	});
+		</script>
+	</head>
+	<body>
+		<button class = "start">Метод .animate()</button>
+		<div>Animate me</div>
+	</body>
+</html>
