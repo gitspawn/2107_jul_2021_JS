@@ -1,0 +1,22 @@
+Промис - объект, представляющий текущее состояние асинхронной операции, 
+для обработки асинхронного кода
+
+У промиса есть 2 состояния:
+Pending — ожидание, некое начальное состояние при создании промиса.
+Settled — выполнен.
+Settled делится на два состояния: 
+  - fullfilled — выполнено успешно
+  - rejected — выполнено с ошибкой.
+
+
+Чейнинг (chaining) — возможность строить асинхронные цепочки из промисов. Одна из основных причин существования и активного использования промисов.
+Каждый метод then, результатом своего выполнения, возвращает промис. Его значением будет то, что возвращается из callback-функции onResolve.
+
+Promise.resolve(), Promise.reject() и Promise.finally()
+Вызов статического метода Promise.resolve(value) создаёт успешно выполнившийся промис с результатом value. Это аналогично new Promise((resolve) => resolve(value)), только короче. Этот метод используют, когда хотят построить асинхронную цепочку и начальный результат уже есть.
+
+Это можно использовать для того, чтобы заменить callback на цепочку промисов. То есть вместо, того чтобы передавать callback в функцию и надеяться на лучшее, получаем промис и чейним then, в котором доступен результат работы функции.
+
+
+Event loopamespamp
+http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
