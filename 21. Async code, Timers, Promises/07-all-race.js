@@ -39,5 +39,5 @@ Promise.all(promises).then((horse) => console.table(horse));
 Promise.race(promises).then((horse) => console.table(horse));
 
 // AJAX
-// Prommises
+// Promises
 // Async / await

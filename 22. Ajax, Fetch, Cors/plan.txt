@@ -1,0 +1,20 @@
+PART_1
+Повторить:
+- Протоколы передачи данных 
+- URL, URN, URI
+- Status codes
+- Headers
+
+- REST API
+- AJAX и Fetch API
+- CORS (Кроссдоменные запросы) https://www.youtube.com/watch?v=stvCHJZq5MI&ab_channel=WebDevTV
+
+- Mime-types
+https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_MIME-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2 
+
+
+PART_2
+REST PAGINATION
+
+Guardian API
+https://open-platform.theguardian.com/documentation/
