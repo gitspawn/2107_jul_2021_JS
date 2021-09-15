@@ -28,7 +28,8 @@ class News {
         this.prevButton = document.querySelector("#prev");
         this.nextButton = document.querySelector("#next");
         this.input = document.querySelector("input[type='number']");
-        this.inputSearch = document.querySelector("input[type='text']");
+        this.inputSearch = document.querySelector("form");
+        this.inputValue = "";
         this.span = document.querySelector("span");
         this.list = document.querySelector(".list");
         this.pageCounter = 1;
@@ -42,22 +43,17 @@ class News {
     // vova = "Vova";
 
     fetchNews = () => {
-        // this.onInputChange();
-        console.log(this.inputSearch.value);
-        // let query = `&q=${this.inputSearch}`;
+        let query = `&q=${this.inputValue}`;
+        let url = this.uri + this.pageCounter + query;
 
-        // console.log(query);
-        // let url = this.uri + this.pageCounter + query;
-        let url = this.uri + this.pageCounter + this.inputSearch.value;
-        console.log(url);
-        // console.log(this.pageCounter);
         fetch(url, {})
             .then((response) => response.json())
             .then((data) => {
-                // console.log(data);
                 if (data.response.status === "ok") {
-                    this.renderNews(data.response.results);
-                    this.renderPagintion(data.response);
+                    if (data.response.status === "ok") {
+                        this.renderNews(data.response.results);
+                        this.renderPagintion(data.response);
+                    }
                 }
             })
             .catch((err) => {
@@ -66,7 +62,6 @@ class News {
     };
 
     renderNews(arrResults) {
-        // console.log(arrResults);
         this.list.innerHTML = "";
         let listCollection = arrResults.map(
             ({ webUrl, webTitle, webPublicationDate }) => {
@@ -116,27 +111,24 @@ class News {
     onInputChange = (event) => {
         let inputValue = event.target.value;
         this.pageCounter = Number(inputValue);
-        // console.log(this.pageCounter);
-        // console.log(inputValue);
         if (inputValue > 0) {
             this.fetchNews();
         }
     };
 
     onSearchChange = (event) => {
-        if (event) {
-            console.log(event.target.value);
-            this.inputSearch = event.target.value;
-        }
+        event.preventDefault();
+        // Длинная срока чтоб было понятно откуда берется
+        this.inputValue = event.target.elements.text.value.toLowerCase();
+        this.fetchNews();
     };
 
     loadListeners = () => {
+        window.addEventListener("load", this.fetchNews);
         this.prevButton.addEventListener("click", this.onPrevBtnClick);
         this.nextButton.addEventListener("click", this.onNextBtnClick);
         this.input.addEventListener("input", this.onInputChange);
-        this.inputSearch.addEventListener("input", this.onSearchChange);
-        // window.addEventListener("load", this.onSearchChange);
-        window.addEventListener("load", this.fetchNews);
+        this.inputSearch.addEventListener("submit", this.onSearchChange);
     };
 
     init = () => {
