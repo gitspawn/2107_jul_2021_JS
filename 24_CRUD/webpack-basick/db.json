@@ -1,0 +1,94 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Границы безумия",
+      "author": "Виктория Селман",
+      "genres": [
+        "Триллеры о психологах-профайлерах"
+      ],
+      "rating": 9.38
+    },
+    {
+      "id": 2,
+      "title": "Кадры решают все",
+      "author": "Мария Воронова",
+      "genres": [
+        "фантастика"
+      ],
+      "rating": 4.51
+    },
+    {
+      "id": 3,
+      "title": "Зов Ктулху",
+      "author": "Говард Лавкрафт",
+      "genres": [
+        "ужасы",
+        "мистика"
+      ],
+      "rating": 7.94
+    },
+    {
+      "title": "Автобиография",
+      "author": "Генри Форд",
+      "genres": [
+        "проза, биография "
+      ],
+      "rating": 6.2,
+      "id": 4
+    },
+    {
+      "name": "Vova",
+      "title": "JS Helper",
+      "id": 5
+    },
+    {
+      "name": "Vova",
+      "title": "JS Helper",
+      "id": 6
+    }
+  ],
+  "formula1": [
+    {
+      "id": 1,
+      "team": "Mercedes f1",
+      "drivers": [
+        "Lewis Hamilton",
+        "Valteri Bottas"
+      ]
+    },
+    {
+      "id": 2,
+      "team": "Red Bull Racing f1",
+      "drivers": [
+        "Max Verstapen",
+        "Sergio Perez"
+      ]
+    },
+    {
+      "id": 3,
+      "team": "Scideria Ferrari",
+      "drivers": [
+        "Carlos Sainz",
+        "Charles Leclerc"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Vova",
+      "status": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Sara",
+      "status": "moderator"
+    },
+    {
+      "id": "3",
+      "name": "Bob",
+      "status": "customer"
+    }
+  ]
+}

@@ -119,6 +119,7 @@ class News {
     onSearchChange = (event) => {
         event.preventDefault();
         // Длинная срока чтоб было понятно откуда берется
+        console.log(event.target.elements);
         this.inputValue = event.target.elements.text.value.toLowerCase();
         this.fetchNews();
     };

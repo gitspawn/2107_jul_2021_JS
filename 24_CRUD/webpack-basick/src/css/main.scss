@@ -1,0 +1,15 @@
+@import "./colors.scss";
+
+body {
+    background-color: $body-color;
+}
+
+h1 {
+    color: $heading-color;
+}
+
+p {
+    font-weight: 400;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
