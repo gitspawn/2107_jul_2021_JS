@@ -1,0 +1,30 @@
+.container {
+    background-color: gray;
+}
+
+.name {
+    font-weight: 600;
+    color: maroon;
+}
+
+/* Базовый класс */
+.qty {
+    /* font-weight: 600; */
+    text-decoration: underline;
+}
+
+.price {
+    font-weight: 600;
+    color: magenta;
+}
+
+/* Композиция */
+.awaliable {
+    composes: qty;
+    color: green;
+}
+
+.notAwaliable {
+    composes: qty;
+    color: red-ccc;
+}

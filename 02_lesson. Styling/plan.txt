@@ -1,0 +1,23 @@
+# Инлайн CSS
+
+# Подключение CSS
+
+# Подключение SASS
+
+# CSS-модули
+  - https://glenmaddern.com/articles/css-modules
+  - Композиция
+  - Переменные
+  - Глобальные стили
+
+# CSS-in-JS
+  - https://css-live.ru/articles/vsyo-chto-vam-nuzhno-znat-o-css-in-js.html
+  - Styled Components https://styled-components.com/
+  - Emotion https://emotion.sh/docs/introduction
+  - JSS https://cssinjs.org/?v=v10.6.0
+
+# Библиотеки компонентов
+ - https://material-ui.com/
+
+Деплой на github-pages
+https://gist.github.com/gitspawn/4e815bd412b980f9e521c1e321cdd783#file-github-pages

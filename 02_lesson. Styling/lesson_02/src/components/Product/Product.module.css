@@ -1,0 +1,35 @@
+/* @value colors: "../vars.module.css";
+@value blue, red-c, green from colors; */
+
+@value blue, red-ccc, green from "../../vars.module.css";
+
+.container {
+    background-color: gray;
+}
+
+.name {
+    font-weight: 600;
+    color: maroon;
+}
+
+/* Базовый класс */
+.qty {
+    /* font-weight: 600; */
+    text-decoration: underline;
+}
+
+.price {
+    font-weight: 600;
+    color: magenta;
+}
+
+/* Композиция */
+.awaliable {
+    composes: qty;
+    color: green;
+}
+
+.notAwaliable {
+    composes: qty;
+    color: red-ccc;
+}

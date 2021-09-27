@@ -1,0 +1,39 @@
+import React from "react-dom";
+import PropTypes from "prop-types";
+
+let styles = {
+    container: {
+        backgroundColor: "lightgrey",
+        outline: "1px solid blue",
+    },
+};
+
+let Section = (props) => {
+    let { title, children } = props;
+
+    return (
+        <>
+            <section
+            // style={{
+            //     backgroundColor: "lightgrey",
+            //     outline: "2px solid green",
+            // }}
+
+            // style={styles.container}
+            >
+                {/* {console.log(title)} */}
+
+                {/* if */}
+                {title && <h1>{title}</h1>}
+                {children}
+            </section>
+        </>
+    );
+};
+
+Section.propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.node,
+};
+
+export default Section;
