@@ -1,0 +1,5 @@
+# Pattern Controlled Element
+# Формы: input, redio, checkbox, select
+# Форма регистрации
+# Вычиляемые данные
+# Продолжаем с заметками: обновление и фильтрация
