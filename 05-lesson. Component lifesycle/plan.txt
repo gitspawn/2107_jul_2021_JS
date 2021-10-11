@@ -1,0 +1,11 @@
+# Жизненый цикл компонента
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+https://ru.reactjs.org/docs/react-component.html#the-component-lifecycle
+
+#Методы жизненного цикла
+#Сохранение коллекции в LocalStorage
+#Модальное окно
+#Таймер
+#Табы
+
+
