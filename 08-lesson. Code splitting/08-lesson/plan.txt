@@ -1,0 +1,47 @@
+#Маршрутизация
+
+
+#Структура URL-строки
+https://site.com/author/b45erlz?category=adventure&status=unread#comments
+https://site.com - origin
+-https:// - протокол
+-site.com/ - хост
+-author/b45erlz - путь (pathname), то где мы находимся в приложении, где: author - статический параметр, b45erlz - динамический параметр
+-b45erlz - url-параметр. Параметры бывают динамическими или статическими
+-? - символ начала строки запроса
+-?category=adventure&status=unread​ - строка запроса (query string)
+-category=adventure - пара параметр=значение
+-& - символ "И", разделяет параметры строки запроса
+-#comments - якорь (хеш), определяет положение на странице
+
+
+#История навигации
+Показать window.history
+Показать window.location
+Ознакомиться с https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd
+
+
+Существует несколько типов истории.
+- Browser history - использует HTML5 History API, стандарт управления историей браузера из JavaScript.
+- Hash history - в старых браузерах не поддерживается HTML5 History API, поэтому для них существует эта реализация.
+- Memory history - позволяет использовать историю сессии в памяти, вне окна браузера. К примеру для тестирования логики без интерфейса и в средах без DOM, к примеру React Native.
+
+
+
+#React Router 
+Предоставляет набор компонентов для управления частями URL-строки и отображения различных компонетов в зависимости от текущего ее состояния. 
+React Router разбит на пакеты для различных платформ, нам нужуен react-router-dom.
+Документация https://reactrouter.com/web/guides/philosophy
+- BrowserRouter
+- Route 
+  - проп component
+  - проп render
+- Switch
+- Redirect
+- Link и NavLink
+- Route props
+  - проп match — объект с информацией о том как совпали path и location.pathname
+  - проп location — объект хранящий информацию о текущем URL
+  - проп history — объект истории, созданный самим раутером
+
+
