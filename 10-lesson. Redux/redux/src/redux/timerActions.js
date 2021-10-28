@@ -15,7 +15,7 @@ export let onDecrement = (value) => {
     return { type: Type.DECREMENT, payload: value };
 };
 
-export let onChangeStep = (step) => {
+export let changeStep = (step) => {
     return { type: Type.CHANGE_STEP, payload: { step: Number(step) } };
 };
 

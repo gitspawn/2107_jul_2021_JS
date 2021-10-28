@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-import { onChangeStep } from "../../redux/timerActions";
+import { changeStep } from "../../redux/timerActions";
 
 function StepSelector({ options, step, onChangeStep }) {
     return (
         <label>
+            Select step:
             <select
                 value={step}
                 onChange={(event) => onChangeStep(event.target.value)}
@@ -25,10 +26,8 @@ let mapStateToProps = (state) => {
     };
 };
 
-let mapDispatchToProps = () => {
-    return {
-        onChangeStep: onChangeStep,
-    };
+let mapDispatchToProps = {
+    onChangeStep: changeStep,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(StepSelector);
